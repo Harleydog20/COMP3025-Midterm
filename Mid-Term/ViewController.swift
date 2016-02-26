@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var num1: UILabel!
+    @IBOutlet weak var num2: UILabel!
+    @IBOutlet weak var num3: UILabel!
+    @IBOutlet weak var num4: UILabel!
+    @IBOutlet weak var num5: UILabel!
+    @IBOutlet weak var num6: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,6 +31,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func more(sender: AnyObject) {
+    }
+    
+    @IBAction func clear(sender: AnyObject) {
     }
 }
 
