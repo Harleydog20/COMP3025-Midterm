@@ -27,13 +27,28 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func less(sender: AnyObject) {
+    @IBAction func less1(sender: AnyObject) {
+        let num:Int? = num1.text.toInt()
+        if num != 0{
+            num--
+            num1.text = "num"
+        }
     }
-
-    @IBAction func more(sender: AnyObject) {
+    
+    @IBAction func more1(sender: AnyObject) {
+        let num:Int? = num1.text.toInt()
+        num++
+        num1.text = "num"
+        
     }
     
     @IBAction func clear(sender: AnyObject) {
+        num1.text = "0"
+        num2.text = "0"
+        num3.text = "0"
+        num4.text = "0"
+        num5.text = "0"
+        num6.text = "0"
     }
 }
 
