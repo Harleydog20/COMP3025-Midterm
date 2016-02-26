@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func less(sender: AnyObject) {
+    }
 
+    @IBAction func more(sender: AnyObject) {
+    }
 }
 
