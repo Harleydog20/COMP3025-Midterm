@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+        //Outlets
     @IBOutlet weak var num1: UILabel!
     @IBOutlet weak var num2: UILabel!
     @IBOutlet weak var num3: UILabel!
@@ -27,22 +28,30 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //lower number
     @IBAction func less1(sender: AnyObject) {
-        let num:Int? = num1.text.toInt()
-        if num != 0{
+        let num:Int? = num1.text.toInt() //get current num and change it from string to int
+        if num != 0{ //if current num is zero, do nothing, else lower the number
             num--
-            num1.text = "num"
+            num1.text = "num"//show the new number
         }
     }
-    
+    //rasie number
     @IBAction func more1(sender: AnyObject) {
-        let num:Int? = num1.text.toInt()
-        num++
-        num1.text = "num"
+        let num:Int? = num1.text.toInt()//get current num and change it from string to int
+        num++ //change the number
+        num1.text = "num" //show the new number
         
     }
     
+    //Less2
+    //More2
+    //Less3
+    //etc.
+    
+    //clear form
     @IBAction func clear(sender: AnyObject) {
+        //reset all numbers
         num1.text = "0"
         num2.text = "0"
         num3.text = "0"
